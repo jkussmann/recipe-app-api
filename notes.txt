@@ -1,0 +1,5 @@
+# build the docker image
+docker build .
+
+# build the image from docker compose
+docker-compose build
