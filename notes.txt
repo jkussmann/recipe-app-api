@@ -3,3 +3,12 @@ docker build .
 
 # build the image from docker compose
 docker-compose build
+
+# create the django project 
+docker-compose run app sh -c "django-admin.py startproject app ."
+
+# run the container
+docker run -it --rm --name recipe-app-api_app -v "C:\temp1\recipe-app-api\app":/app recipe-app-api_app /bin/ash 
+
+# run the tests
+docker-compose run app sh -c "python manage.py test"
