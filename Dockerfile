@@ -4,7 +4,7 @@ LABEL maintainer = "John Kussmann"
 ENV PYTHONUNBUFFERED 1
 ENV COMPOSE_CONVERT_WINDOWS_PATHS=1
 
-COPY dependencies/requirements.txt /requirements.txt
+COPY requirements.txt /requirements.txt
 
 RUN pip install --upgrade pip
 RUN pip install -r /requirements.txt
