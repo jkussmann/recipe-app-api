@@ -2,6 +2,7 @@ FROM python:3.7-alpine
 LABEL maintainer = "John Kussmann"
 
 ENV PYTHONUNBUFFERED 1
+ENV COMPOSE_CONVERT_WINDOWS_PATHS=1
 
 COPY dependencies/requirements.txt /requirements.txt
 
