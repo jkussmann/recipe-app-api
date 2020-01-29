@@ -12,3 +12,21 @@ docker run -it --rm --name recipe-app-api_app -v "C:\temp1\recipe-app-api\app":/
 
 # run the tests
 docker-compose run app sh -c "python manage.py test"
+
+# Create new core app
+docker-compose run app sh -c "python manage.py startapp core"
+
+# remove tests and views from core app
+
+# create a tests folder and put tests in there
+
+# create user model
+
+# do migrations
+# whenever you make changes to the models, you must run the migrations again
+
+docker-compose run app sh -c "python manage.py makemigrations core"
+
+# commit changes
+
+
