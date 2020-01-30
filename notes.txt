@@ -29,4 +29,9 @@ docker-compose run app sh -c "python manage.py makemigrations core"
 
 # commit changes
 
+# update admin to use custom user model
+
+# set up postgres
+# add postgres to requirements.txt, dockerfile, settings.py
+
 
